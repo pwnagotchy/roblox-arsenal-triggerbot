@@ -1,6 +1,7 @@
 ## Just a Roblox Arsenal Triggerbot
 
 
+
 ### build and run
 I don't know how windows works so I built it using wsl; Read the build script I guess.
 If you are using wsl, just run ```./b```.
