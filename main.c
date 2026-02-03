@@ -52,14 +52,22 @@ int main(int argc, char **argv) {
   screen.x = 1920;
   screen.y = 1080;
 
-  int scan_x = (screen.x / 2) - 3;
-  int scan_y = (screen.y / 2) - 3;
+  int scan_x = (screen.x / 2) - 2;
+  int scan_y = (screen.y / 2) - 2;
 
   double d_t;
 
   while (1) {
 
     clock_t start_time = clock();
+
+		if(scan_x == (screen.x / 2) - 2){
+			scan_x == (screen.x / 2) + 2;
+			scan_y == (screen.y / 2) + 2;
+		} else {
+			scan_x = (screen.x / 2) - 2;
+			scan_y = (screen.y / 2) - 2;
+		}
 
     color = GetPixel(hDC, scan_x, scan_y);
 
